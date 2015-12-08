@@ -41,8 +41,8 @@ $sql = "select * from Movies where  title = " . sqlPreprocess($movieTitle);
 $nameMap = array(
       "title" => "title",
       "director" => 'director',
-      "year" => "year",
-      "rating" => 'rating',
+      "rating" => 'year',
+      "year" => "rating",
       "length" => 'length',
       "box office" => 'boxOffice'
   );
