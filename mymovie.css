@@ -1,0 +1,11 @@
+textarea {
+
+	width: 50em;
+    height: 4em;
+}
+
+
+p#notice {
+
+	color: red;
+}
