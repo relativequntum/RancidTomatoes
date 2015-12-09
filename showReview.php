@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+ <link href="movie.css" type="text/css" rel="stylesheet" />
    
   <title>Search Result</title>
    
@@ -41,8 +41,8 @@ $sql = "select * from Movies where  title = " . sqlPreprocess($movieTitle);
 $nameMap = array(
       "title" => "title",
       "director" => 'director',
-      "rating" => 'year',
-      "year" => "rating",
+      "year" => 'year',
+      "rating" => "rating",
       "length" => 'length',
       "box office" => 'boxOffice'
   );

@@ -4,7 +4,7 @@
 
    
 
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link href="movie.css" type="text/css" rel="stylesheet" />
    
         <title>Search Result</title>
    
@@ -72,8 +72,8 @@ mysqli_query($link,"SET NAMES utf8");
     $sql = "INSERT INTO Movies  (`movieId`, `title`, `director`, `year`, `rating`, `length`, `boxOffice`) VALUES (". "1, ".
          sqlPreprocess($title) . ", " .
          sqlPreprocess($director) . ", " .
-         sqlPreprocess($rating) . ", " .
-          sqlPreprocess($year) . ", " .
+         sqlPreprocess($year)  . ", " .
+          sqlPreprocess($rating). ", " .
            sqlPreprocess($length) . ", " .
             sqlPreprocess($boxOffice) .
          ")";

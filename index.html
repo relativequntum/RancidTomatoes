@@ -10,28 +10,36 @@
 </head>
 
 <body>
+
     <header>
         <img src="images/rancidbanner.png" alt="Rancid Tomatoes">
     </header>
+    <br><br><br>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="addMovieView.php">Add</a></li>
+  <li><a href="register.php">Register</a></li>
+  <li><a href="login.php">Login</a></li>
+</ul>
     <div class="container">
         <div class="row main-header">
-            <h1>TMNT
- (2007
-)</h1>
+            <h1>Find Your Movies</h1>
         </div>
 
         <form class="pure-form" action="showSearchResults.php">
     <fieldset>
         <legend>search movie by title</legend>
 
-        <input type="text" placeholder="title" name="title" id="title">
+        <input type="text" oninput="return ajax_get()" placeholder="title" name="title" id="title">
 
 
         <button type="submit" onclick="return ajax_get()" class="pure-button pure-button-primary">search</button>
-
-
+        
     </fieldset>
 </form>
+<button class="pure-button pure-button-primary" onclick="addMovieClick()">add movie</button>
+
+
 
    
 
@@ -41,12 +49,13 @@
      </div>
 
 
-        <button class="pure-button pure-button-primary" onclick="addMovieClick()">add movie</button>
-
+        
+<!--
         <div class="main row">
             <section class="reviews-container">
                 <aside class="ratings-container">
-                    <img src="images/rottenlarge.png" alt="Rotten" /> <span class="rotten rating">33%</span>
+                    <img src="images/rottenlarge.png" alt="Rotten" /> 
+                     <span class="rotten rating">33%</span>
                 </aside>
                 <div class="row">
                     <div class="review-wrapper">
@@ -253,10 +262,10 @@
                 </dl>
             </section>
             <footer class="row">
-                <p>(1-10) of 88</p>
+                <p>(1-10) of 10</p>
             </footer>
         </div>
-    </div>
+    </div>-->
 </body>
 
 </html>

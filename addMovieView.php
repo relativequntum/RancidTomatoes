@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link href="movie.css" type="text/css" rel="stylesheet" />
        
         <title>Search the Database</title>
 
@@ -29,7 +29,12 @@
 
         <div class="pure-control-group">
             <label for="rating">rating</label>
-            <input id="rating" type="text" name="rating" />
+            
+            <select id="rating" name="rating">
+					<option value="G">G</option>
+					<option value="PG">PG</option>
+					<option value="R">R</option>
+				</select>
         </div>
 
          <div class="pure-control-group">

@@ -3,7 +3,7 @@
 
        <link href="mymovie.css" type="text/css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link href="movie.css" type="text/css" rel="stylesheet" />
 
         <script src="mymovie.js"></script>
        
