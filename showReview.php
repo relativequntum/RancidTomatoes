@@ -125,7 +125,9 @@ function sqlPreprocess($origin)
   </tbody>
 
   </table>
-
+<form action="index.html" method="get">
+<button type="subject">Home</button>
+</form>
 </body>
 </html>
 

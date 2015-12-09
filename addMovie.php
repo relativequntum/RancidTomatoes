@@ -69,8 +69,7 @@ mysqli_query($link,"SET NAMES utf8");
 
     $boxOffice = $_POST['boxOffice'];
 
-    $sql = "INSERT INTO Movies  (`movieId`, `title`, `director`, `year`, `rating`, `length`, `boxOffice`) VALUES (". "1, ".
-         sqlPreprocess($title) . ", " .
+    $sql = "INSERT INTO Movies  (`title`, `director`, `year`, `rating`, `length`, `boxOffice`) VALUES (" .sqlPreprocess($title) . ", " .
          sqlPreprocess($director) . ", " .
          sqlPreprocess($year)  . ", " .
           sqlPreprocess($rating). ", " .

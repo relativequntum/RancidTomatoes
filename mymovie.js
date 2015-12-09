@@ -43,8 +43,6 @@ function ajax_get(){
     var parameters = "title="+title;
     request.open("GET", url+"?"+parameters, true);
   
-    // request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  
     request.onreadystatechange = function() {
 	    if(request.readyState == 4 && request.status == 200) {
 		    var return_data = request.responseText;
